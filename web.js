@@ -6,10 +6,10 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
   // response.send('Hello Warren!');
-  var stuff = fs.readFileSync('index.html','utf-8');
+  var stuff = fs.readFileSync('index.html','utf8');
   buf = new Buffer(256);
   buf.write(stuff);
-  response.send(buf.toString('utf-8'));
+  response.send(buf.toString());
 
 });
 
