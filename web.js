@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   // response.send('Hello Warren!');
   var stuff = fs.readFileSync('index.html');
   buf.write(stuff);
-  response.send(buf.toString('utf-8');
+  response.send(buf.toString('utf-8'));
 
 });
 
